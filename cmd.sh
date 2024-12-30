@@ -33,3 +33,6 @@ ln -s /afs/zengwang/.ssh ~/
 
 cd  /afs/zengwang/projects/task_define_service/
 git clone git@github.com:zengwang430521/Qwen2-VL.git
+
+cd  /afs/zengwang/projects/task_define_service/Qwen2-VL
+python test/test_video1.py
