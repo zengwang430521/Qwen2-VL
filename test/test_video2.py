@@ -18,7 +18,7 @@ processor = AutoProcessor.from_pretrained(model_ckpt)
 video_path = '/afs/zengwang/projects/task_define_service/data/video_event/push-up_2.mp4'
 time_spots = [2, 15, 21, 43, 54]
 query = 'Please narrate the video in real time.'
-fps = 5
+fps = 4
 
 video_info = {
     "type": "video",
@@ -39,8 +39,8 @@ for t in time_spots:
 messages = [{
     "role": 'user',
     'content': [
+        video_info,
         {"type": "text", "text": query},
-        video_info
     ]
 }]
 image_inputs = None
