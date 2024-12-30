@@ -45,6 +45,7 @@ messages = [{
 }]
 image_inputs = None
 video_inputs = []
+# import pdb; pdb.set_trace()
 for t, clip in zip(time_spots, video_clips):
     text = processor.apply_chat_template(
         messages, tokenize=False, add_generation_prompt=True
