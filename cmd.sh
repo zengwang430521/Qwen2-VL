@@ -25,6 +25,28 @@ s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.
 /afs/zengwang/projects/task_define_service/data/video_event
 
 
+~/ads-cli sync \
+/home/SENSETIME/zengwang/myprojects/task_define_service/data/shot2story-videos \
+s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.aoss.cn-sh-01.sensecoreapi-oss.cn/data/shot2story-videos
+
+
+/afs/zengwang/ads-cli sync \
+s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.aoss-internal.cn-sh-01.sensecoreapi-oss.cn/data/shot2story-videos \
+/afs/zengwang/projects/task_define_service/data/shot2story-videos
+
+/afs/zengwang/ads-cli sync \
+/afs/zengwang/projects/task_define_service/data/shot2story-videos_release_134k \
+s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.aoss-internal.cn-sh-01.sensecoreapi-oss.cn/data/shot2story-videos_release_134k
+
+
+~/ads-cli sync \
+/home/SENSETIME/zengwang/myprojects/task_define_service/data/shot2story \
+s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.aoss.cn-sh-01.sensecoreapi-oss.cn/data/shot2story
+
+
+/afs/zengwang/ads-cli sync \
+s3://196FFD00B6184227B65B3D92C01A8724:DD1D004D80834448B276F125F8310F2A@zengwang.aoss-internal.cn-sh-01.sensecoreapi-oss.cn/data/shot2story \
+/afs/zengwang/projects/task_define_service/data/shot2story
 
 
 
@@ -36,3 +58,7 @@ git clone git@github.com:zengwang430521/Qwen2-VL.git
 
 cd  /afs/zengwang/projects/task_define_service/Qwen2-VL
 python test/test_video1.py
+
+
+cat release_134k_videos.tar.gz.* > release_134k_videos.tar.gz
+tar xf release_134k_videos.tar.gz --no-same-owner

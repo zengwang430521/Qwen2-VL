@@ -15,9 +15,14 @@ model = Qwen2VLForConditionalGeneration.from_pretrained(
 processor = AutoProcessor.from_pretrained(model_ckpt)
 
 
-video_path = '/afs/zengwang/projects/task_define_service/data/video_event/push-up_2.mp4'
-time_spots = [2, 15, 21, 43, 54]
-query = 'Please narrate the video in real time.'
+# video_path = '/afs/zengwang/projects/task_define_service/data/video_event/push-up_2.mp4'
+# time_spots = [2, 15, 21, 43, 54]
+# query = 'Please narrate the video in real time.'
+# fps = 4
+
+video_path = '/afs/zengwang/projects/task_define_service/data/shot2story-videos_release_134k/W26nTWGbf3g.8.mp4'
+time_spots = [2, 8, 14, 20]
+query = 'Please concisely narrate the video in real time.'
 fps = 4
 
 video_info = {
